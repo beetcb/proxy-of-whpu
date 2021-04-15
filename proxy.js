@@ -50,9 +50,11 @@ const cb = (req, res) => {
 
 app.use(require('express').json())
 
-app.get('/authserver/*', cb)
+app.get('/authserver/login', cb)
+app.get('/checkNeedCaptcha.htl', cb)
+app.get('/getCaptcha.htl', cb)
 
-app.post('/authserver/*', cb)
+app.post('/authserver/login', cb)
 
 app.get('/', (req, res) => {
   res.send()
