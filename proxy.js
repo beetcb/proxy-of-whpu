@@ -22,7 +22,6 @@ const cb = (req, res) => {
       Referer: 'https://cas.whpu.edu.cn/authserver/login?service=https%3A%2F%2Fwhpu.campusphere.net%2Fportal%2Flogin',
       'User-Agent':
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36',
-      Connection: 'keep-alive',
       Cookie: Object.keys(req.cookies).reduce((s, i) => `${s}${i}=${req.cookies[i]};`, ''),
       'Upgrade-Insecure-Requests': '1',
     },
